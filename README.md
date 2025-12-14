@@ -4,76 +4,85 @@ Welcome to the **Bank** project, a comprehensive machine learning exploration im
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies and Libraries](#technologies-and-libraries)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+* [Overview](#overview)
+* [Features](#features)
+* [Technologies and Libraries](#technologies-and-libraries)
+* [Requirements](#requirements)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Live Demo](#live-demo)
+* [Project Structure](#project-structure)
+* [Contributing](#contributing)
+* [License](#license)
 
 ## Overview
 
 The **Bank** project explores the performance of multiple machine learning models and their hyperparameter optimization techniques. It delves into advanced preprocessing, feature engineering, and model evaluation to analyze classification tasks while addressing typical challenges, such as discovering and mitigating data leakage.
 
 The key objectives are:
-- Model benchmarking: KNN, Trees, SVM, Logistic Regression, Random Forest, and XGBoost.
-- Hyperparameter Optimization: Optuna, Randomized Search, and Grid Search.
-- Dimensionality Reduction: PCA with `f_classif` and `mutual_info_classif` using `SelectKBest`.
-- Feature Engineering: Implementing transformations and identifying data leakage for better model reliability.
+
+* Model benchmarking: KNN, Trees, SVM, Logistic Regression, Random Forest, and XGBoost.
+* Hyperparameter Optimization: Optuna, Randomized Search, and Grid Search.
+* Dimensionality Reduction: PCA with `f_classif` and `mutual_info_classif` using `SelectKBest`.
+* Feature Engineering: Implementing transformations and identifying data leakage for better model reliability.
 
 ## Features
 
-- **Preprocessing**: Advanced handling of missing data, encoding categorical variables, and scaling numerical features.
-- **Hyperparameter Optimization (HPO)**: Utilization of cutting-edge tools such as Optuna and Grid/Randomized Search for optimal model tuning.
-- **Dimensionality Reduction**: Application of PCA and feature selection techniques using statistical measures.
-- **Model Comparison**: In-depth analysis of algorithms like KNN, decision trees, SVM, logistic regression, random forest, and gradient boosting (XGBoost).
-- **Visualization**: Comprehensive analytics with confusion matrices, ROC curves, parameter importance, and optimization history plots.
-- **Feature Engineering**: Exploration of the dataset to identify data leakage and improve model robustness.
+* **Preprocessing**: Advanced handling of missing data, encoding categorical variables, and scaling numerical features.
+* **Hyperparameter Optimization (HPO)**: Utilization of cutting-edge tools such as Optuna and Grid/Randomized Search for optimal model tuning.
+* **Dimensionality Reduction**: Application of PCA and feature selection techniques using statistical measures.
+* **Model Comparison**: In-depth analysis of algorithms like KNN, decision trees, SVM, logistic regression, random forest, and gradient boosting (XGBoost).
+* **Visualization**: Comprehensive analytics with confusion matrices, ROC curves, parameter importance, and optimization history plots.
+* **Feature Engineering**: Exploration of the dataset to identify data leakage and improve model robustness.
 
 ## Technologies and Libraries
 
 The following libraries/tools were used in this project:
 
 ### Core Libraries:
-- **Python**: Core programming language.
-- **Google Colab**: Hosted Jupyter notebook environment for efficient model experimentation.
-- **Pandas, NumPy**: Data analysis and manipulation.
-- **Matplotlib, Seaborn**: Visualization tools.
+
+* **Python**: Core programming language.
+* **Google Colab**: Hosted Jupyter notebook environment for efficient model experimentation.
+* **Pandas, NumPy**: Data analysis and manipulation.
+* **Matplotlib, Seaborn**: Visualization tools.
 
 ### Preprocessing:
-- `sklearn.impute` (SimpleImputer, MissingIndicator, IterativeImputer)
-- `sklearn.preprocessing` (OneHotEncoder, OrdinalEncoder, StandardScaler, LabelEncoder, FunctionTransformer)
-- `sklearn.pipeline` and `sklearn.compose`
+
+* `sklearn.impute` (SimpleImputer, MissingIndicator, IterativeImputer)
+* `sklearn.preprocessing` (OneHotEncoder, OrdinalEncoder, StandardScaler, LabelEncoder, FunctionTransformer)
+* `sklearn.pipeline` and `sklearn.compose`
 
 ### Model Training:
-- `sklearn.neighbors` (KNN)
-- `sklearn.tree` (Decision Trees)
-- `sklearn.linear_model` (Logistic Regression)
-- `sklearn.svm` (Support Vector Machines)
-- `sklearn.ensemble` (Random Forest, BaggingClassifier)
-- **XGBoost** (XGBClassifier)
-- `sklearn.dummy` (Dummy Classifiers)
+
+* `sklearn.neighbors` (KNN)
+* `sklearn.tree` (Decision Trees)
+* `sklearn.linear_model` (Logistic Regression)
+* `sklearn.svm` (Support Vector Machines)
+* `sklearn.ensemble` (Random Forest, BaggingClassifier)
+* **XGBoost** (XGBClassifier)
+* `sklearn.dummy` (Dummy Classifiers)
 
 ### Model Evaluation:
-- Metrics: `accuracy_score`, `classification_report`, `f1_score`, etc.
-- Visualization: `ConfusionMatrixDisplay`, `RocCurveDisplay`
+
+* Metrics: `accuracy_score`, `classification_report`, `f1_score`, etc.
+* Visualization: `ConfusionMatrixDisplay`, `RocCurveDisplay`
 
 ### Hyperparameter Optimization:
-- **Optuna**: `OptunaSearchCV`, `optuna.visualization`
-- `GridSearchCV`, `RandomizedSearchCV`
+
+* **Optuna**: `OptunaSearchCV`, `optuna.visualization`
+* `GridSearchCV`, `RandomizedSearchCV`
 
 ### Advanced Feature Selection:
-- `SelectKBest` using **f_classif** and **mutual_info_classif**
+
+* `SelectKBest` using **f_classif** and **mutual_info_classif**
 
 ## Requirements
 
-- Python 3.8 or higher.
-- Google Colab Environment.
+* Python 3.8 or higher.
+* Google Colab Environment.
 
 ### Package Installation:
+
 Please refer to the `requirements.txt` file for the list of dependencies.
 
 ## Installation
@@ -101,12 +110,19 @@ Please refer to the `requirements.txt` file for the list of dependencies.
 
 1. Open the Jupyter Notebook in Google Colab.
 2. Follow the pipeline for:
-   - Data Preprocessing
-   - Feature Engineering
-   - Training and Evaluating Models
-   - Hyperparameter Optimization
-   - Dimensionality Reduction with PCA
+
+   * Data Preprocessing
+   * Feature Engineering
+   * Training and Evaluating Models
+   * Hyperparameter Optimization
+   * Dimensionality Reduction with PCA
 3. Visualize and analyze the results using built-in plots and metrics.
+
+## Live Demo
+
+A live, interactive version of this project is available as a **Streamlit web application**, where you can explore the model predictions and results directly in your browser:
+
+👉 **[https://bankprediction.streamlit.app/](https://bankprediction.streamlit.app/)**
 
 ## Project Structure
 
